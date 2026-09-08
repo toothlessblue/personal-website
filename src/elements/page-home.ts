@@ -12,6 +12,7 @@ export class PageHome extends LitElement {
     render() {
         return html` 
             <p>Hello world!</p>
+            <p><a href="https://toothlessblue.itch.io">My itch page</a></p>
         `;
     }
 }
