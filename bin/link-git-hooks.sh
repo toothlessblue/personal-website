@@ -1,6 +1,6 @@
 #!/bin/bash
 
 for filepath in git-hooks/*; do
-    filename="${filepath##*/}";
-    ln -s "../../git-hooks/$filename" ".git/hooks/$filename";
+    filename="$(basename $filepath .sh)";
+    ln -s "../../git-hooks/$filename.sh" ".git/hooks/$filename";
 done
