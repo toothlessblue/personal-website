@@ -1,0 +1,5 @@
+services:
+  personal_website:
+    image: personalwebsite:latest
+    ports:
+      - "57826:80"
