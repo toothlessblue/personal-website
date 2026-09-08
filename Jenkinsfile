@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
-                sh 'bun i'
+                sh '/var/lib/jenkins/.bun/bin/bun i'
                 sh '/var/lib/jenkins/.bun/bin/bun run build-docker'
             }
         }
