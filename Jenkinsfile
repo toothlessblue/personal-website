@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building';
-                /home/toothlessblue/.bun/bin/bun run build-docker;
+                echo 'Building'
+                sh '/home/toothlessblue/.bun/bin/bun run build-docker'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploy!';
+                echo 'Deploy!'
             }
         }
     }
