@@ -8,7 +8,6 @@
     "build-blog-index": "bun build_tools/build_blog_index.ts > src/blog_index.json", 
     "build": "tsc && bun run build-blog-index && vite build",
     "build-docker": "bun run build && docker build -t personalwebsite .",
-    "trigger-jenkins-build": "curl http://192.168.1.151:62904/job/Personal%20Website%20Build/build?token=1b81ee0ea1bd3bb656aa49e816478f7fb20a8758e1a86621b3d881067cef390f",
     "preview": "vite preview"
   },
   "dependencies": {
