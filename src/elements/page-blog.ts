@@ -9,6 +9,17 @@ import { formatRelative } from 'date-fns';
 @customElement('page-blog')
 export class PageBlog extends LitElement {
     static styles = css`
+        :host {
+            display: block;
+            margin: auto;
+            max-width: 1000px;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 1000px;
+        }
+
         pre {
             padding: 10px;
             border-radius: 10px;
